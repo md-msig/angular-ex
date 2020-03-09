@@ -15,7 +15,7 @@ export class AppComponent {
   isavailable = false; //variable is set to true
 
   myClickFunction(event) {
-    alert("Button is clicked");
+    this.isavailable = !this.isavailable;
   }
 
   changemonths(event) {

@@ -1,6 +1,9 @@
 <div style = "text-align:center"> 
   <h1> Welcome to {{ title }}! </h1> 
 </div>
+<div style = "text-align:center"> 
+  <h1 appChangeText> Welcome to {{ title }}! </h1> 
+</div>
 
 <div> Months : 
   <select (change) = "changemonths($event)"> 
@@ -10,8 +13,8 @@
 <br/>
 
 <div> 
-  <span *ngIf = "isavailable; else condition1">Condition is valid.</span> 
-  <ng-template #condition1>Condition is invalid</ng-template>   
+  <span *ngIf = "isavailable; else condition2">Condition is valid</span>
+  <ng-template #condition2>Condition is invalid from template</ng-template>
 </div>
 
 <button (click) = "myClickFunction($event)">
