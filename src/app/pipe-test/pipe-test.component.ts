@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PipeTestComponent implements OnInit {
   title = "Pipe Test";
-  todaydate = new Date();
+  todaydate1 = new Date();
   jsonval = {name:"Rox", age:"25", toll:"160.5"};
   months = ["Jan", "Feb", "Mar", "April", "May", "Jun", "July", "Aug", 
       "Sept", "Oct", "Nov", "Dec"];

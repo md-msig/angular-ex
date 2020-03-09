@@ -8,6 +8,7 @@ import { NewCmpComponent } from './new-cmp/new-cmp.component';
 import { ChangeTextDirective } from './change-text.directive';
 import { PipeTestComponent } from './pipe-test/pipe-test.component';
 import { SqrtPipe } from './app.sqrt';
+import { GlobalService } from './global.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { SqrtPipe } from './app.sqrt';
     AppRoutingModule,
     FormsModule 
   ],
-  providers: [],
+  providers: [GlobalService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

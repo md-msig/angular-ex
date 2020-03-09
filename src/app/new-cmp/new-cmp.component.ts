@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { GlobalService } from './../global.service';
 
 @Component({
   selector: 'app-new-cmp',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NewCmpComponent implements OnInit {
   newcomponent = "Entered in new component created";
-  constructor() { }
+  todaydate;
+  newcomponentproperty;
+  constructor(private globalservice: GlobalService) { }
 
   ngOnInit(): void {
+    this.todaydate = this.globalservice.showTodayDate();
+    this.newcomponentproperty = this.globalservice.serviceproperty;
   }
 
 }

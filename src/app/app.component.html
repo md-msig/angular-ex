@@ -20,10 +20,13 @@
 <button (click) = "myClickFunction($event)">
   Click Me
 </button>
-
+<h3>Service Property: {{componentproperty}}</h3>
 <app-new-cmp></app-new-cmp>
 <hr/>
 <app-pipe-test></app-pipe-test>
+<div>Today Date:
+  <h1>{{ todaydate }}</h1>
+</div>
 <nav> 
   <a routerLink = "/home">Home</a> 
   <a routerLink = "/contactus">Contact Us </a> 
