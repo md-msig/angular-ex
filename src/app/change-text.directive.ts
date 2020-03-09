@@ -9,5 +9,4 @@ export class ChangeTextDirective {
     console.log(Element);
     Element.nativeElement.innerText = "Text is changed by appChangeText Directive.";
   }
-
 }

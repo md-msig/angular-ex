@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-ex';
+  title = 'Welcome to angular-ex. This is angular 9 project';
 
   // declared array of months. 
   months = ["January", "February", "March", "April", "May", "June", "July", 

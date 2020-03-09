@@ -1,8 +1,8 @@
 <div style = "text-align:center"> 
-  <h1> Welcome to {{ title }}! </h1> 
+  <h1> {{ title | uppercase }}! </h1> 
 </div>
 <div style = "text-align:center"> 
-  <h1 appChangeText> Welcome to {{ title }}! </h1> 
+  <h1 appChangeText> {{ title | lowercase }}! </h1> 
 </div>
 
 <div> Months : 
@@ -22,3 +22,5 @@
 </button>
 
 <app-new-cmp></app-new-cmp>
+<hr/>
+<app-pipe-test></app-pipe-test>
